@@ -1,0 +1,25 @@
+﻿<body class="viewPageBG">
+</body>
+
+<h1 class="text-center">329 E 63Rd Street, Lenox Hill, NY 10065</h1>
+
+
+<div>
+    <table class="table table-striped table-bordered text-center">
+
+    <tr class="fw-bolder letterSize">
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Unit Number</td>
+    </tr>
+
+   @foreach (Tenant tenant in ViewBag.Tenant)
+        {
+            <tr class="fw-bolder letterSize">
+                <td>@tenant.FirstName</td>
+                <td>@tenant.LastName</td>
+                <td>@tenant.UnitNo</td>
+            </tr>
+        }
+    </table>
+</div>

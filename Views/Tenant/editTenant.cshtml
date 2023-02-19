@@ -1,0 +1,26 @@
+﻿
+
+    <body id="editCreatePageBG">
+    </body>
+
+    <h1 class="move">Update Tenant</h1>
+
+<div class="movingForm">
+    <form action="/Tenant/editTenantSave" method="post">
+
+        First Name <br />
+        <input type="text" name="firstName" id="firstName"  value="@ViewBag.tenant.FirstName" class="rounded" /> <br />
+
+        Last Name <br />
+        <input type="text" name="lastName" id="lasttName"  value="@ViewBag.tenant.LastName" class="rounded" /> <br />
+
+        Unit Number <br />
+        <input type="text" name="unitNo" id="unitNo"  value="@ViewBag.tenant.UnitNo" class="rounded" /> <br />
+
+        <button type="reset" class="btn-info rounded">Clear</button>
+        <button type="submit" class="btn-info rounded">Update Tenant</button>
+        
+        <input type="hidden" id="Id" name="Id" value="@ViewBag.Tenant.Id" />
+        <br />
+    </form>
+</div>

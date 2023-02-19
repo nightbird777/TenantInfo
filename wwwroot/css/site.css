@@ -1,0 +1,59 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+#editCreatePageBG {
+    background-image: url('/Images/Bd.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.movingForm {
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 35%;
+}
+
+.move {
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 50px;
+    font-weight: bolder;
+}
+
+.viewPageBG {
+    background-color: lightskyblue
+}
+
+
+#HomepageBody {
+    background-image: url('/Images/nano.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.letterSize{
+    font-size: 24px;
+}

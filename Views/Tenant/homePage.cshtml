@@ -1,0 +1,49 @@
+﻿<body class="viewPageBG">
+</body>
+
+
+<div>
+    <form action="/Tenant/ExportAsCSV" method="post">
+        <button class="btn btn-success">ExportAsCSV</button>
+    </form>
+</div>
+
+
+
+<div>
+    <table class="table table-striped table-bordered text-center">
+
+    <tr class="letterSize">
+        <td>Tenant ID</td>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Unit Number</td>
+        <td>Change</td>
+        <td>Remove</td>
+    </tr>
+
+   @foreach (Tenant tenant in ViewBag.Tenant)
+        {
+            <tr class="letterSize">
+                <td>@tenant.Id</td>
+                <td>@tenant.FirstName</td>
+                <td>@tenant.LastName</td>
+                <td>@tenant.UnitNo</td>
+                <td>
+                    <button type="button" class="btn btn-danger" onclick="location.href =
+                    '/Tenant/editTenant/?ID=@tenant.Id'">Edit</button>
+                </td>
+
+                <td>
+                    <button type="button" class="btn btn-danger" onclick="location.href =
+                    '/Tenant/DeleteTenant/?ID=@tenant.Id'">Delete</button>
+                </td>
+
+                @*<td>
+                <button type="button" onclick="if ( ConfirmDelete()){location.href =
+                '/Nano/DeleteProduct/?ID=@product.ProductId';};">Delete</button>
+            </td>*@
+            </tr>
+        }
+    </table>
+</div>
